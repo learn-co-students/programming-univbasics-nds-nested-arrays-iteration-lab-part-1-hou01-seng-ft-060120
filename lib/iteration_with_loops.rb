@@ -3,4 +3,20 @@ def find_even_values(src)
   #
   # Output all even values in each nested array
 
+#--------------My First Solution--------------------
+  src.flatten!
+  for number in src do
+    if number % 2 === 0
+      puts number
+    end
+  end
+
+#-------------My Second Solution Using Loops -------------
+#  for arr in src do
+#    for ar in arr do
+#      if ar % 2 === 0
+#        puts ar
+#      end
+#    end
+#  end
 end
