@@ -4,8 +4,9 @@ def find_even_values(src)
   # Output all even values in each nested array
 
 #--------------My First Solution--------------------
-  src.flatten!
-  for number in src do
+  src_copy = src
+  src_copy.flatten!
+  for number in src_copy do
     if number % 2 === 0
       puts number
     end
